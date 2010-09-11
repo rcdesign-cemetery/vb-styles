@@ -2,7 +2,7 @@
 
 <style name="Readability" vbversion="4.0.6" product="vbulletin" type="custom">
 	<templategroup name="Ungrouped Templates">
-		<template name="additional.css" templatetype="template" date="1284088411" username="Vitaly" version="4.0.6"><![CDATA[/* Make sexy dashed thread list */
+		<template name="additional.css" templatetype="template" date="1284245578" username="Vitaly" version="4.0.6"><![CDATA[/* Make sexy dashed thread list */
 
 .threadbit .nonsticky, .threadbit .deleted, .threadbit .discussionrow, .threadbit .ignored, .threadbit .sticky {
   border-style: none none dashed !important;
@@ -121,6 +121,11 @@
 a.blogentrylink {
   font-weight: normal !important;
   color: #000000;
+}
+
+/* Albums */
+#albumtop h1 {
+  margin-right:30px !important;
 }
 
 /* VBSEO Deals */
