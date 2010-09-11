@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<style name="Bigfonts" vbversion="4.0.6" product="vbulletin" type="custom">
+	<templategroup name="Ungrouped Templates">
+		<template name="additional.css" templatetype="template" date="1284093506" username="Vitaly" version="4.0.6"><![CDATA[/* Fix Page navigation & threadlist stat wordwrap & Ext img width */
+
+.threadpagenav,
+.pagination_top,
+.pagination_bottom,
+#pagetitle,
+.postcontrols {
+  width: auto !important;
+}
+.threadpagestats,
+.postpagestats {
+  clear: both !important;
+}
+#above_searchresults {
+  margin:2.5em 0 0 !important;
+}
+
+.threadstats{
+  white-space: nowrap;
+}
+.postcontent img, .blogcontent img, .posttext img {
+  max-width: 600px !important;
+}
+
+/* Without this IE6/7 sometimes sucks in threads,
+   breaking last post & adding long tail to page */
+
+.postbit, .postbitlegacy, .eventbit {
+  border-left: none;
+  border-right: none;
+}
+
+/* VBSEO Deals */
+
+h1.relevant_replacement {
+ font-size: 140% !important;
+ font-weight: bold;
+ color: #3e3e3e;
+ margin-bottom: 3px;
+}
+p.relevant_replacement {
+ font-size: 11px;
+ width: 640px;
+ margin-bottom: 2px;
+}
+]]></template>
+	</templategroup>
+	<stylevardfns>
+	</stylevardfns>
+	<stylevars>
+		<stylevar name="bbcode_quote_font" value="YTo2OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjY6ImZhbWlseSI7czo2MDoiJ0RlamFWdSBTYW5zJyxWZXJkYW5hLEFyaWFsLFRhaG9tYSxDYWxpYnJpLEdlbmV2YSxzYW5zLXNlcmlmIjtzOjQ6InNpemUiO3M6MjoiMTQiO3M6Njoid2VpZ2h0IjtzOjY6Im5vcm1hbCI7czo1OiJzdHlsZSI7czo2OiJpdGFsaWMiO3M6NzoidmFyaWFudCI7czowOiIiO30=" />
+		<stylevar name="content_msg_font" value="YTo2OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjY6ImZhbWlseSI7czo2MDoiJ0RlamFWdSBTYW5zJyxWZXJkYW5hLEFyaWFsLFRhaG9tYSxDYWxpYnJpLEdlbmV2YSxzYW5zLXNlcmlmIjtzOjQ6InNpemUiO3M6MjoiMTQiO3M6Njoid2VpZ2h0IjtzOjA6IiI7czo1OiJzdHlsZSI7czowOiIiO3M6NzoidmFyaWFudCI7czowOiIiO30=" />
+		<stylevar name="font" value="YTo2OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjY6ImZhbWlseSI7czo0NDoiVGFob21hLCBDYWxpYnJpLCBWZXJkYW5hLCBHZW5ldmEsIHNhbnMtc2VyaWYiO3M6NDoic2l6ZSI7czoyOiIxNCI7czo2OiJ3ZWlnaHQiO3M6MDoiIjtzOjU6InN0eWxlIjtzOjA6IiI7czo3OiJ2YXJpYW50IjtzOjA6IiI7fQ==" />
+		<stylevar name="forum_msg_font" value="YTo2OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjY6ImZhbWlseSI7czo2MDoiJ0RlamFWdSBTYW5zJyxWZXJkYW5hLEFyaWFsLFRhaG9tYSxDYWxpYnJpLEdlbmV2YSxzYW5zLXNlcmlmIjtzOjQ6InNpemUiO3M6MjoiMTQiO3M6Njoid2VpZ2h0IjtzOjA6IiI7czo1OiJzdHlsZSI7czowOiIiO3M6NzoidmFyaWFudCI7czowOiIiO30=" />
+	</stylevars>
+</style>

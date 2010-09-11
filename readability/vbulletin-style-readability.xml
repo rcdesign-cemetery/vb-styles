@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<style name="Readability" vbversion="4.0.6" product="vbulletin" type="custom">
+	<templategroup name="Ungrouped Templates">
+		<template name="additional.css" templatetype="template" date="1284088411" username="Vitaly" version="4.0.6"><![CDATA[/* Make sexy dashed thread list */
+
+.threadbit .nonsticky, .threadbit .deleted, .threadbit .discussionrow, .threadbit .ignored, .threadbit .sticky {
+  border-style: none none dashed !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+.threadbit, .threadlisthead {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+.threadbit .threadmeta, .threadbit .threadstats, .threadbit .threadlastpost, .threadbit .threadlastpost .username {
+  font-size: 11px !important;
+}
+.threadmeta {
+  color: #606060;
+}
+
+
+/* Other blocks dashed borders */
+
+.wgo_subblock {
+  border-style: none none dashed !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+.forum_info_block,
+.forum_info_form,
+.thread_info_block {
+  border-style: none none dashed !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  margin-bottom: 15px !important;
+}
+.forum_info_block,
+.forum_info_form,
+.thread_info_block {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+
+/* Fix Page navigation & threadlist stat wordwrap & Ext img width */
+
+.threadpagenav,
+.pagination_top,
+.pagination_bottom,
+#pagetitle,
+.postcontrols {
+  width: auto !important;
+}
+.threadpagestats,
+.postpagestats {
+  clear: both !important;
+}
+#above_searchresults {
+  margin:2.5em 0 0 !important;
+}
+
+.threadstats{
+  white-space: nowrap;
+}
+.postcontent img, .blogcontent img, .posttext img {
+  max-width: 600px !important;
+}
+
+
+/* Move up post buttons */
+
+.postbit .postbody, .postbitlegacy .postbody, .eventbit .eventbody {
+  padding-bottom: 20px !important;
+}
+.postbit .postfoot, .postbitlegacy .postfoot, .eventbit .eventfoot {
+  margin-top: -30px !important;
+}
+/*
+.postlinking {
+  margin-left: 200px;
+}
+*/
+
+/* Postbit Dashes & other tweeks */
+
+.postbody, .userinfo, .eventbody {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+.postbit, .postbitlegacy, .eventbit {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.posthead, .eventhead {
+  -moz-border-radius: 3px 3px 0 0;
+  -webkit-border-radius: 3px 3px 0 0;
+}
+
+
+/* Forum list */
+
+.forumrow {
+  border-style: none none dashed !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+.forumstats, .forumstats_2 {
+  font-size: 12px !important;
+}
+
+/* More Readability - Line Heights */
+
+.postcontent, .blogcontent, .posttext {
+  line-height: 1.5em !important;
+}
+a.blogentrylink {
+  font-weight: normal !important;
+  color: #000000;
+}
+
+/* VBSEO Deals */
+
+h1.relevant_replacement {
+ font-size: 140% !important;
+ font-weight: bold;
+ color: #3e3e3e;
+ margin-bottom: 3px;
+}
+p.relevant_replacement {
+ font-size: 11px;
+ width: 640px;
+ margin-bottom: 2px;
+}
+]]></template>
+	</templategroup>
+	<stylevardfns>
+	</stylevardfns>
+	<stylevars>
+		<stylevar name="bbcode_quote_font" value="YTo2OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjY6ImZhbWlseSI7czoxODoiVmVyZGFuYSxzYW5zLXNlcmlmIjtzOjQ6InNpemUiO3M6MjoiMTQiO3M6Njoid2VpZ2h0IjtzOjY6Im5vcm1hbCI7czo1OiJzdHlsZSI7czo2OiJpdGFsaWMiO3M6NzoidmFyaWFudCI7czowOiIiO30=" />
+		<stylevar name="body_color" value="YToxOntzOjU6ImNvbG9yIjtzOjc6IiMwMDAwMDAiO30=" />
+		<stylevar name="content_msg_font" value="YTo2OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjY6ImZhbWlseSI7czoxODoiVmVyZGFuYSxzYW5zLXNlcmlmIjtzOjQ6InNpemUiO3M6MjoiMTQiO3M6Njoid2VpZ2h0IjtzOjA6IiI7czo1OiJzdHlsZSI7czowOiIiO3M6NzoidmFyaWFudCI7czowOiIiO30=" />
+		<stylevar name="control_content_radius" value="YToyOntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjQ6InNpemUiO3M6MToiNyI7fQ==" />
+		<stylevar name="font" value="YTo2OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjY6ImZhbWlseSI7czoxODoiVmVyZGFuYSxzYW5zLXNlcmlmIjtzOjQ6InNpemUiO3M6MjoiMTQiO3M6Njoid2VpZ2h0IjtzOjA6IiI7czo1OiJzdHlsZSI7czowOiIiO3M6NzoidmFyaWFudCI7czowOiIiO30=" />
+		<stylevar name="forum_msg_font" value="YTo2OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjY6ImZhbWlseSI7czoxODoiVmVyZGFuYSxzYW5zLXNlcmlmIjtzOjQ6InNpemUiO3M6MjoiMTQiO3M6Njoid2VpZ2h0IjtzOjA6IiI7czo1OiJzdHlsZSI7czowOiIiO3M6NzoidmFyaWFudCI7czowOiIiO30=" />
+		<stylevar name="forumbits_shadow_color" value="YToxOntzOjU6ImNvbG9yIjtzOjc6IiNGRkZGRkYiO30=" />
+		<stylevar name="forumhead_font" value="YTo2OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjY6ImZhbWlseSI7czoxODoiVmVyZGFuYSxzYW5zLXNlcmlmIjtzOjQ6InNpemUiO3M6MjoiMTQiO3M6Njoid2VpZ2h0IjtzOjQ6ImJvbGQiO3M6NToic3R5bGUiO3M6MDoiIjtzOjc6InZhcmlhbnQiO3M6MDoiIjt9" />
+		<stylevar name="foruminfo_border" value="YTo0OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjU6IndpZHRoIjtzOjE6IjEiO3M6NToic3R5bGUiO3M6NToic29saWQiO3M6NToiY29sb3IiO3M6NzoiI0EwQTBBMCI7fQ==" />
+		<stylevar name="forummenu_border_radius" value="YToyOntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjQ6InNpemUiO3M6MToiNSI7fQ==" />
+		<stylevar name="forumrow_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czowOiIiO3M6NToiaW1hZ2UiO3M6MDoiIjtzOjY6InJlcGVhdCI7czowOiIiO3M6MToieCI7czowOiIiO3M6MToieSI7czowOiIiO30=" />
+		<stylevar name="forumrow_firstentry_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czowOiIiO3M6NToiaW1hZ2UiO3M6MDoiIjtzOjY6InJlcGVhdCI7czowOiIiO3M6MToieCI7czowOiIiO3M6MToieSI7czowOiIiO30=" />
+		<stylevar name="link_color" value="YToxOntzOjU6ImNvbG9yIjtzOjc6IiMwMDRlODEiO30=" />
+		<stylevar name="linkhover_color" value="YToxOntzOjU6ImNvbG9yIjtzOjc6IiMwMDRlODEiO30=" />
+		<stylevar name="navbar_font" value="YTo2OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjY6ImZhbWlseSI7czo0MzoiQXJpYWwsIENhbGlicmksIFZlcmRhbmEsIEdlbmV2YSwgc2Fucy1zZXJpZiI7czo0OiJzaXplIjtzOjI6IjEyIjtzOjY6IndlaWdodCI7czowOiIiO3M6NToic3R5bGUiO3M6MDoiIjtzOjc6InZhcmlhbnQiO3M6MDoiIjt9" />
+		<stylevar name="pagination_color" value="YToxOntzOjU6ImNvbG9yIjtzOjc6IiMwMDRlODEiO30=" />
+		<stylevar name="pagination_current_border" value="YTo0OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjU6IndpZHRoIjtzOjE6IjEiO3M6NToic3R5bGUiO3M6NToic29saWQiO3M6NToiY29sb3IiO3M6NzoiIzAwNGU4MSI7fQ==" />
+		<stylevar name="popupmenu_border_radius" value="YToyOntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjQ6InNpemUiO3M6MToiNSI7fQ==" />
+		<stylevar name="postbit_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czo3OiIjRkZGRkZGIjtzOjU6ImltYWdlIjtzOjA6IiI7czo2OiJyZXBlYXQiO3M6MDoiIjtzOjE6IngiO3M6MDoiIjtzOjE6InkiO3M6MDoiIjt9" />
+		<stylevar name="postbit_border" value="YTo0OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjU6IndpZHRoIjtzOjE6IjEiO3M6NToic3R5bGUiO3M6NToic29saWQiO3M6NToiY29sb3IiO3M6NzoiI2Q4ZDhkOCI7fQ==" />
+		<stylevar name="postbit_color" value="YToxOntzOjU6ImNvbG9yIjtzOjEyOiJyZ2IoMCwgMCwgMCkiO30=" />
+		<stylevar name="postbit_control_background" value="YToxOntzOjU6ImNvbG9yIjtzOjExOiJ0cmFuc3BhcmVudCI7fQ==" />
+		<stylevar name="postbit_foot_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czowOiIiO3M6NToiaW1hZ2UiO3M6MDoiIjtzOjY6InJlcGVhdCI7czowOiIiO3M6MToieCI7czowOiIiO3M6MToieSI7czowOiIiO30=" />
+		<stylevar name="postbit_userinfo_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czo3OiIjRkZGRkZGIjtzOjU6ImltYWdlIjtzOjA6IiI7czo2OiJyZXBlYXQiO3M6MDoiIjtzOjE6IngiO3M6MDoiIjtzOjE6InkiO3M6MDoiIjt9" />
+		<stylevar name="postbit_userinfo_border" value="YTo0OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjU6IndpZHRoIjtzOjE6IjEiO3M6NToic3R5bGUiO3M6NjoiZGFzaGVkIjtzOjU6ImNvbG9yIjtzOjc6IiNkOGQ4ZDgiO30=" />
+		<stylevar name="threadbit_alt_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czo3OiIjRkZGRkZGIjtzOjU6ImltYWdlIjtzOjA6IiI7czo2OiJyZXBlYXQiO3M6MDoiIjtzOjE6IngiO3M6MDoiIjtzOjE6InkiO3M6MDoiIjt9" />
+		<stylevar name="threadbit_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czo3OiIjRkZGRkZGIjtzOjU6ImltYWdlIjtzOjA6IiI7czo2OiJyZXBlYXQiO3M6MDoiIjtzOjE6IngiO3M6MDoiIjtzOjE6InkiO3M6MDoiIjt9" />
+		<stylevar name="threadbit_hilite_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czo3OiIjRkZGRkZGIjtzOjU6ImltYWdlIjtzOjA6IiI7czo2OiJyZXBlYXQiO3M6MDoiIjtzOjE6IngiO3M6MDoiIjtzOjE6InkiO3M6MDoiIjt9" />
+		<stylevar name="threadlisthead_top_corner_radius" value="YToyOntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjQ6InNpemUiO3M6MToiNSI7fQ==" />
+		<stylevar name="vbblog_link_color" value="YToxOntzOjU6ImNvbG9yIjtzOjc6IiMwZDVmOTQiO30=" />
+		<stylevar name="wgo_border" value="YTo0OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjU6IndpZHRoIjtzOjE6IjEiO3M6NToic3R5bGUiO3M6NToic29saWQiO3M6NToiY29sb3IiO3M6NzoiI0EwQTBBMCI7fQ==" />
+	</stylevars>
+</style>
