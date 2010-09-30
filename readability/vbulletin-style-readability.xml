@@ -2,7 +2,7 @@
 
 <style name="Readability" vbversion="4.0.6" product="vbulletin" type="custom">
 	<templategroup name="Ungrouped Templates">
-		<template name="additional.css" templatetype="template" date="1284245578" username="Vitaly" version="4.0.6"><![CDATA[/* Make sexy dashed thread list */
+		<template name="additional.css" templatetype="template" date="1285740567" username="Vitaly" version="4.0.6"><![CDATA[/* Make sexy dashed thread list */
 
 .threadbit .nonsticky, .threadbit .deleted, .threadbit .discussionrow, .threadbit .ignored, .threadbit .sticky {
   border-style: none none dashed !important;
@@ -84,6 +84,7 @@
 }
 */
 
+
 /* Postbit Dashes & other tweeks */
 
 .postbody, .userinfo, .eventbody {
@@ -113,6 +114,7 @@
   font-size: 12px !important;
 }
 
+
 /* More Readability - Line Heights */
 
 .postcontent, .blogcontent, .posttext {
@@ -128,6 +130,16 @@ a.blogentrylink {
   margin-right:30px !important;
 }
 
+
+/* Blogs */
+.blogentrybit {
+  padding-bottom:30px !important;
+}
+.postbit-lite {
+  padding-bottom:30px !important;
+}
+
+
 /* VBSEO Deals */
 
 h1.relevant_replacement {
@@ -141,15 +153,35 @@ p.relevant_replacement {
  width: 640px;
  margin-bottom: 2px;
 }
-]]></template>
+
+
+/* PM Previews */
+
+.pmlist .blockrow .title {
+ font-size: 14px !important;
+}
+.pmbit fieldset {
+ margin: 5px 0 5px 40px !important;
+ line-height: 1.5em;
+ font-size: 13px;
+ width: 75% !important;
+}
+
+
+/* Move focus from userinfo to message text */
+
+.userinfo_extra {
+ color:{vb:stylevar shade_color} !important;
+}]]></template>
 	</templategroup>
 	<stylevardfns>
 	</stylevardfns>
 	<stylevars>
-		<stylevar name="bbcode_quote_font" value="YTo2OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjY6ImZhbWlseSI7czoxODoiVmVyZGFuYSxzYW5zLXNlcmlmIjtzOjQ6InNpemUiO3M6MjoiMTQiO3M6Njoid2VpZ2h0IjtzOjY6Im5vcm1hbCI7czo1OiJzdHlsZSI7czo2OiJpdGFsaWMiO3M6NzoidmFyaWFudCI7czowOiIiO30=" />
+		<stylevar name="bbcode_quote_font" value="YTo2OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjY6ImZhbWlseSI7czoxODoiVmVyZGFuYSxzYW5zLXNlcmlmIjtzOjQ6InNpemUiO3M6MjoiMTMiO3M6Njoid2VpZ2h0IjtzOjY6Im5vcm1hbCI7czo1OiJzdHlsZSI7czo2OiJub3JtYWwiO3M6NzoidmFyaWFudCI7czowOiIiO30=" />
 		<stylevar name="body_color" value="YToxOntzOjU6ImNvbG9yIjtzOjc6IiMwMDAwMDAiO30=" />
 		<stylevar name="content_msg_font" value="YTo2OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjY6ImZhbWlseSI7czoxODoiVmVyZGFuYSxzYW5zLXNlcmlmIjtzOjQ6InNpemUiO3M6MjoiMTQiO3M6Njoid2VpZ2h0IjtzOjA6IiI7czo1OiJzdHlsZSI7czowOiIiO3M6NzoidmFyaWFudCI7czowOiIiO30=" />
 		<stylevar name="control_content_radius" value="YToyOntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjQ6InNpemUiO3M6MToiNyI7fQ==" />
+		<stylevar name="control_font" value="YTo2OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjY6ImZhbWlseSI7czo0NDoiVGFob21hLCBDYWxpYnJpLCBWZXJkYW5hLCBHZW5ldmEsIHNhbnMtc2VyaWYiO3M6NDoic2l6ZSI7czoyOiIxMyI7czo2OiJ3ZWlnaHQiO3M6NDoiYm9sZCI7czo1OiJzdHlsZSI7czowOiIiO3M6NzoidmFyaWFudCI7czowOiIiO30=" />
 		<stylevar name="font" value="YTo2OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjY6ImZhbWlseSI7czoxODoiVmVyZGFuYSxzYW5zLXNlcmlmIjtzOjQ6InNpemUiO3M6MjoiMTQiO3M6Njoid2VpZ2h0IjtzOjA6IiI7czo1OiJzdHlsZSI7czowOiIiO3M6NzoidmFyaWFudCI7czowOiIiO30=" />
 		<stylevar name="forum_msg_font" value="YTo2OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjY6ImZhbWlseSI7czoxODoiVmVyZGFuYSxzYW5zLXNlcmlmIjtzOjQ6InNpemUiO3M6MjoiMTQiO3M6Njoid2VpZ2h0IjtzOjA6IiI7czo1OiJzdHlsZSI7czowOiIiO3M6NzoidmFyaWFudCI7czowOiIiO30=" />
 		<stylevar name="forumbits_shadow_color" value="YToxOntzOjU6ImNvbG9yIjtzOjc6IiNGRkZGRkYiO30=" />
