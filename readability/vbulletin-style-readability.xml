@@ -2,12 +2,13 @@
 
 <style name="Readability" vbversion="4.0.6" product="vbulletin" type="custom">
 	<templategroup name="Ungrouped Templates">
-		<template name="additional.css" templatetype="template" date="1285740567" username="Vitaly" version="4.0.6"><![CDATA[/* Make sexy dashed thread list */
+		<template name="additional.css" templatetype="template" date="1286134154" username="Vitaly" version="4.0.6"><![CDATA[@charset "UTF-8";
+
+/* Make sexy dashed thread list */
 
 .threadbit .nonsticky, .threadbit .deleted, .threadbit .discussionrow, .threadbit .ignored, .threadbit .sticky {
   border-style: none none dashed !important;
-  padding-top: 7px !important;
-  padding-bottom: 7px !important;
+  padding: 7px 0 !important;
 }
 .threadbit, .threadlisthead {
   -moz-box-shadow: none !important;
@@ -25,16 +26,14 @@
 
 .wgo_subblock {
   border-style: none none dashed !important;
-  padding-top: 15px !important;
-  padding-bottom: 15px !important;
+  padding: 15px 0 !important;
 }
 
 .forum_info_block,
 .forum_info_form,
 .thread_info_block {
   border-style: none none dashed !important;
-  padding-top: 15px !important;
-  padding-bottom: 15px !important;
+  padding: 15px 0 !important;
   margin-bottom: 15px !important;
 }
 .forum_info_block,
@@ -78,12 +77,6 @@
 .postbit .postfoot, .postbitlegacy .postfoot, .eventbit .eventfoot {
   margin-top: -30px !important;
 }
-/*
-.postlinking {
-  margin-left: 200px;
-}
-*/
-
 
 /* Postbit Dashes & other tweeks */
 
@@ -107,8 +100,7 @@
 
 .forumrow {
   border-style: none none dashed !important;
-  padding-top: 7px !important;
-  padding-bottom: 7px !important;
+  padding: 7px 0 !important;
 }
 .forumstats, .forumstats_2 {
   font-size: 12px !important;
@@ -125,18 +117,66 @@ a.blogentrylink {
   color: #000000;
 }
 
+
 /* Albums */
+
 #albumtop h1 {
-  margin-right:30px !important;
+  margin-right: 30px !important;
 }
 
 
 /* Blogs */
+
 .blogentrybit {
-  padding-bottom:30px !important;
+  padding-bottom: 30px !important;
 }
-.postbit-lite {
-  padding-bottom:30px !important;
+.blog_date,
+.blogmeta,
+.blogmeta .shade,
+.blogmeta a,
+.avatarcontent .meta,
+.avatarcontent .meta a {
+ font-style: italic;
+ color:{vb:stylevar shade_color} !important;
+}
+
+/* Blog Comments & SG Messages */
+
+.postbit-lite .postbitfoot {
+ position: static !important;
+ float: {vb:stylevar right};
+}
+.postbit-lite .postbithead {
+ font-size: 12px;
+ color: {vb:stylevar shade_color} !important;
+}
+.postbit-lite .postbithead a.username{
+ font-weight: normal;
+}
+.postbit.postbit-lite {
+ border-top:{vb:stylevar vbblog_bloglist_border} !important;
+ padding:15px 0 0 0 !important;
+ margin-bottom:15px !important;
+}
+.postbit-lite .avatarlink {
+ top:20px !important;
+ position:absolute;
+}
+.postbit-lite .postcontrols {
+ margin-bottom:15px !important;
+}
+.postbit-lite .postcontrols a {
+ color: {vb:stylevar shade_color} !important;
+}
+#below_comments {
+ clear: both;
+}
+
+
+/* Move focus from userinfo to message text */
+
+.userinfo_extra {
+ color: {vb:stylevar shade_color} !important;
 }
 
 
@@ -165,13 +205,6 @@ p.relevant_replacement {
  line-height: 1.5em;
  font-size: 13px;
  width: 75% !important;
-}
-
-
-/* Move focus from userinfo to message text */
-
-.userinfo_extra {
- color:{vb:stylevar shade_color} !important;
 }]]></template>
 	</templategroup>
 	<stylevardfns>
@@ -203,6 +236,8 @@ p.relevant_replacement {
 		<stylevar name="postbit_foot_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czowOiIiO3M6NToiaW1hZ2UiO3M6MDoiIjtzOjY6InJlcGVhdCI7czowOiIiO3M6MToieCI7czowOiIiO3M6MToieSI7czowOiIiO30=" />
 		<stylevar name="postbit_userinfo_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czo3OiIjRkZGRkZGIjtzOjU6ImltYWdlIjtzOjA6IiI7czo2OiJyZXBlYXQiO3M6MDoiIjtzOjE6IngiO3M6MDoiIjtzOjE6InkiO3M6MDoiIjt9" />
 		<stylevar name="postbit_userinfo_border" value="YTo0OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjU6IndpZHRoIjtzOjE6IjEiO3M6NToic3R5bGUiO3M6NjoiZGFzaGVkIjtzOjU6ImNvbG9yIjtzOjc6IiNkOGQ4ZDgiO30=" />
+		<stylevar name="postbitlite_header_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czowOiIiO3M6NToiaW1hZ2UiO3M6MDoiIjtzOjY6InJlcGVhdCI7czowOiIiO3M6MToieCI7czowOiIiO3M6MToieSI7czowOiIiO30=" />
+		<stylevar name="postbitlite_header_border" value="YTo0OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJ3aWR0aCI7czoxOiIwIjtzOjU6InN0eWxlIjtzOjA6IiI7czo1OiJjb2xvciI7czowOiIiO30=" />
 		<stylevar name="threadbit_alt_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czo3OiIjRkZGRkZGIjtzOjU6ImltYWdlIjtzOjA6IiI7czo2OiJyZXBlYXQiO3M6MDoiIjtzOjE6IngiO3M6MDoiIjtzOjE6InkiO3M6MDoiIjt9" />
 		<stylevar name="threadbit_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czo3OiIjRkZGRkZGIjtzOjU6ImltYWdlIjtzOjA6IiI7czo2OiJyZXBlYXQiO3M6MDoiIjtzOjE6IngiO3M6MDoiIjtzOjE6InkiO3M6MDoiIjt9" />
 		<stylevar name="threadbit_hilite_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czo3OiIjRkZGRkZGIjtzOjU6ImltYWdlIjtzOjA6IiI7czo2OiJyZXBlYXQiO3M6MDoiIjtzOjE6IngiO3M6MDoiIjtzOjE6InkiO3M6MDoiIjt9" />
