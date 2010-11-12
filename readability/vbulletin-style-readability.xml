@@ -2,7 +2,7 @@
 
 <style name="Readability" vbversion="4.0.6" product="vbulletin" type="custom">
 	<templategroup name="Ungrouped Templates">
-		<template name="additional.css" templatetype="template" date="1286134154" username="Vitaly" version="4.0.6"><![CDATA[@charset "UTF-8";
+		<template name="additional.css" templatetype="template" date="1289533998" username="Vitaly" version="4.0.6"><![CDATA[@charset "UTF-8";
 
 /* Make sexy dashed thread list */
 
@@ -24,7 +24,13 @@
 
 /* Other blocks dashed borders */
 
+.wgo_block .blockbody,
+.wgo_subblock .blocksubhead {
+  border: 0px !important;
+}
+
 .wgo_subblock {
+  border: 1px dashed #A0A0A0 !important;
   border-style: none none dashed !important;
   padding: 15px 0 !important;
 }
@@ -95,6 +101,13 @@
   -webkit-border-radius: 3px 3px 0 0;
 }
 
+/* Tools Menu */
+
+.toolsmenu,
+.thread_controls {
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+}
 
 /* Forum list */
 
@@ -180,6 +193,23 @@ a.blogentrylink {
 }
 
 
+/* Member Profile */
+
+.userprof_content dl.stats dt {
+ color: {vb:stylevar shade_color} !important;
+}
+
+.userprof #usermenu,
+.member_summary dl {
+ font-size: 11px !important;
+}
+
+.aboutme_left,
+.profile_content .subsubsectionhead {
+ font-size: 100% !important;
+}
+
+
 /* VBSEO Deals */
 
 h1.relevant_replacement {
@@ -205,6 +235,13 @@ p.relevant_replacement {
  line-height: 1.5em;
  font-size: 13px;
  width: 75% !important;
+}
+
+
+/* Groups Time Fix */
+
+.postbit-lite .time {
+ color: {vb:stylevar shade_color} !important;
 }]]></template>
 	</templategroup>
 	<stylevardfns>
@@ -220,7 +257,6 @@ p.relevant_replacement {
 		<stylevar name="forumbits_shadow_color" value="YToxOntzOjU6ImNvbG9yIjtzOjc6IiNGRkZGRkYiO30=" />
 		<stylevar name="forumhead_font" value="YTo2OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjY6ImZhbWlseSI7czoxODoiVmVyZGFuYSxzYW5zLXNlcmlmIjtzOjQ6InNpemUiO3M6MjoiMTQiO3M6Njoid2VpZ2h0IjtzOjQ6ImJvbGQiO3M6NToic3R5bGUiO3M6MDoiIjtzOjc6InZhcmlhbnQiO3M6MDoiIjt9" />
 		<stylevar name="foruminfo_border" value="YTo0OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjU6IndpZHRoIjtzOjE6IjEiO3M6NToic3R5bGUiO3M6NToic29saWQiO3M6NToiY29sb3IiO3M6NzoiI0EwQTBBMCI7fQ==" />
-		<stylevar name="forummenu_border_radius" value="YToyOntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjQ6InNpemUiO3M6MToiNSI7fQ==" />
 		<stylevar name="forumrow_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czowOiIiO3M6NToiaW1hZ2UiO3M6MDoiIjtzOjY6InJlcGVhdCI7czowOiIiO3M6MToieCI7czowOiIiO3M6MToieSI7czowOiIiO30=" />
 		<stylevar name="forumrow_firstentry_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czowOiIiO3M6NToiaW1hZ2UiO3M6MDoiIjtzOjY6InJlcGVhdCI7czowOiIiO3M6MToieCI7czowOiIiO3M6MToieSI7czowOiIiO30=" />
 		<stylevar name="link_color" value="YToxOntzOjU6ImNvbG9yIjtzOjc6IiMwMDRlODEiO30=" />
@@ -243,6 +279,5 @@ p.relevant_replacement {
 		<stylevar name="threadbit_hilite_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czo3OiIjRkZGRkZGIjtzOjU6ImltYWdlIjtzOjA6IiI7czo2OiJyZXBlYXQiO3M6MDoiIjtzOjE6IngiO3M6MDoiIjtzOjE6InkiO3M6MDoiIjt9" />
 		<stylevar name="threadlisthead_top_corner_radius" value="YToyOntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjQ6InNpemUiO3M6MToiNSI7fQ==" />
 		<stylevar name="vbblog_link_color" value="YToxOntzOjU6ImNvbG9yIjtzOjc6IiMwZDVmOTQiO30=" />
-		<stylevar name="wgo_border" value="YTo0OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjU6IndpZHRoIjtzOjE6IjEiO3M6NToic3R5bGUiO3M6NToic29saWQiO3M6NToiY29sb3IiO3M6NzoiI0EwQTBBMCI7fQ==" />
 	</stylevars>
 </style>
