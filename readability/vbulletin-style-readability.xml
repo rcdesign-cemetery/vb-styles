@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<style name="Readability" vbversion="4.0.6" product="vbulletin" type="custom">
-	<templategroup name="Ungrouped Templates">
-		<template name="additional.css" templatetype="template" date="1289535016" username="Vitaly" version="4.0.6"><![CDATA[@charset "UTF-8";
+<style name="Readability" vbversion="4.1.2" product="vbulletin" type="custom">
+	<templategroup name="Ungrouped Templates 1">
+		<template name="additional.css" templatetype="template" date="1300256781" username="Vitaly" version="4.1.2"><![CDATA[@charset "UTF-8";
 
 /* Make sexy dashed thread list */
 
@@ -87,7 +87,7 @@
 
 /* Postbit Dashes & other tweeks */
 
-.postbody, .userinfo, .eventbody {
+.postbody, .postdetails .userinfo, .eventbody {
   margin-top: 10px !important;
   margin-bottom: 10px !important;
 }
@@ -120,6 +120,9 @@
   font-size: 12px !important;
 }
 
+.moderators h4, .subforums h4 {
+    font-weight: normal !important;
+}
 
 /* More Readability - Line Heights */
 
@@ -159,6 +162,7 @@ a.blogentrylink {
 .postbit-lite .postbitfoot {
  position: static !important;
  float: {vb:stylevar right};
+ margin-bottom: {vb:stylevar padding};
 }
 .postbit-lite .postbithead {
  font-size: 12px;
@@ -200,16 +204,24 @@ a.blogentrylink {
  color: {vb:stylevar shade_color} !important;
 }
 
-.userprof #usermenu,
-.member_summary dl {
- font-size: 11px !important;
-}
-
-.aboutme_left,
 .profile_content .subsubsectionhead {
  font-size: 100% !important;
 }
 
+#member_content dt {
+ font-size: 100% !important;
+ font-weight: normal !important;
+}
+
+.member_summary a {
+ font-size: 11px !important;
+}
+
+dl.tabslight dd a,
+#sidebar_container.member_summary .blockrow,
+#sidebar_container.member_summary .blocksubhead.smaller {
+ font-size: 11px !important;
+}
 
 /* VBSEO Deals */
 
@@ -239,10 +251,18 @@ p.relevant_replacement {
 }
 
 
-/* Groups Time Fix */
+/* Social groups */
 
 .postbit-lite .time {
  color: {vb:stylevar shade_color} !important;
+}
+
+#membersblock .blocksubhead span.blocktitle {
+   display: none;
+}
+
+#w_members span {
+ font-size: 10px;
 }]]></template>
 	</templategroup>
 	<stylevardfns>
@@ -274,6 +294,7 @@ p.relevant_replacement {
 		<stylevar name="postbit_userinfo_border" value="YTo0OntzOjU6InVuaXRzIjtzOjI6InB4IjtzOjU6IndpZHRoIjtzOjE6IjEiO3M6NToic3R5bGUiO3M6NjoiZGFzaGVkIjtzOjU6ImNvbG9yIjtzOjc6IiNkOGQ4ZDgiO30=" />
 		<stylevar name="postbitlite_header_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czowOiIiO3M6NToiaW1hZ2UiO3M6MDoiIjtzOjY6InJlcGVhdCI7czowOiIiO3M6MToieCI7czowOiIiO3M6MToieSI7czowOiIiO30=" />
 		<stylevar name="postbitlite_header_border" value="YTo0OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJ3aWR0aCI7czoxOiIwIjtzOjU6InN0eWxlIjtzOjA6IiI7czo1OiJjb2xvciI7czowOiIiO30=" />
+		<stylevar name="secondarycontent_color" value="YToxOntzOjU6ImNvbG9yIjtzOjc6IiMwMDAwMDAiO30=" />
 		<stylevar name="threadbit_alt_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czo3OiIjRkZGRkZGIjtzOjU6ImltYWdlIjtzOjA6IiI7czo2OiJyZXBlYXQiO3M6MDoiIjtzOjE6IngiO3M6MDoiIjtzOjE6InkiO3M6MDoiIjt9" />
 		<stylevar name="threadbit_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czo3OiIjRkZGRkZGIjtzOjU6ImltYWdlIjtzOjA6IiI7czo2OiJyZXBlYXQiO3M6MDoiIjtzOjE6IngiO3M6MDoiIjtzOjE6InkiO3M6MDoiIjt9" />
 		<stylevar name="threadbit_hilite_background" value="YTo2OntzOjU6InVuaXRzIjtzOjA6IiI7czo1OiJjb2xvciI7czo3OiIjRkZGRkZGIjtzOjU6ImltYWdlIjtzOjA6IiI7czo2OiJyZXBlYXQiO3M6MDoiIjtzOjE6IngiO3M6MDoiIjtzOjE6InkiO3M6MDoiIjt9" />
